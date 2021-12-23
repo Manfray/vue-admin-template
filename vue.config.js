@@ -38,7 +38,7 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require('./mock/mock-server.js') // 开发环境使用 mock-server，利用express的能力生成一个服务应用
+    before: require('./mock/mock-server.js') // 可以在其他所有中间件之前执行的自定义中间件 mock-server，只在开发环境中生效，生产环境使用的mockjs拦截，见main.js
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that

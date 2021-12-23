@@ -13,7 +13,7 @@ function registerRoutes(app) {
     return responseFake(route.url, route.type, route.response)
   })
   for (const mock of mocksForServer) {
-    app[mock.type](mock.url, mock.response)
+    app[mock.type](mock.url, mock.response) // 注册服务
     mockLastIndex = app._router.stack.length
   }
   const mockRoutesLength = Object.keys(mocksForServer).length
