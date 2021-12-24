@@ -52,7 +52,6 @@ module.exports = [
     url: '/vue-admin-template/user/info\.*',
     type: 'get',
     response: config => {
-      
       const { token } = config.query
       const info = users[token]
 

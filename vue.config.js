@@ -15,7 +15,7 @@ const name = defaultSettings.title || 'vue Admin Template' // page title
 // port = 9528 npm run dev OR npm run dev --port = 9528
 const port = process.env.port || process.env.npm_config_port || 9528 // dev port
 
-const lintOnSave = process.env.NODE_ENV === 'development' ? 'error' : false // 是否开启eslint保存检测 ,它的有效值为 true || false || 'error'
+const lintOnSave = process.env.NODE_ENV === 'development' ? 'error' : false // 是否开启eslint保存检测 ,它的有效值为 Boolean | 'default' | 'warning' | 'error'
 
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {

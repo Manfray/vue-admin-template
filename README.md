@@ -45,7 +45,7 @@ npm run preview -- --report
 npm run lint
 
 # 代码格式检查并自动修复
-npm run lint -- --fix
+npm run lint --fix
 ```
 
 ## Nprogress 使用
@@ -53,6 +53,18 @@ npm run lint -- --fix
 
 ## loading使用
 不建议放在路由拦截器中处理，会在多个请求同时进行时候出现loading混乱
+
+## .editorconfig IDE格式配置
+- Webstore支持同步修复，vscode须额外安装并启用 EditorConfig for VS Code 插件， 可在保存时按配置自动修复
+
+1、root<boolean>  :  是否是顶级配置文件，设置为true的时候才会停止搜索.editorconfig文件
+2、charset<"latin" | "utf-8" | "utf-8-bom" | "utf-16be" | "utf-16le">     :    文件编码格式
+3、indent_style<"tab" | "space">    ：  缩进方式
+4、indent_size<number>    ：    缩进大小
+5、end_of_line<"lf" | "cr" | "crlf">    ：    换行符类型
+6、insert_final_newline<boolean>   ：     是否让文件以空行结束
+7、trim_trailing_whitespace<boolean>  ：   是否删除行尾空格 
+8、max_line_length<number>    ：    最大行宽。
 
 ## 动态路由
 ## 功能
